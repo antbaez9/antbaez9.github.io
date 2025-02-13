@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anthony Baez</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: -apple-system, sans-serif;
+            text-align: center;
+        }
+        .profile-img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            /* margin-top: -100px; Moves the image up */
+
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anthony Baez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="container mt-5">
+        <div class="row align-items-center"> <!-- Bootstrap row -->
+            <!-- Left Column: Text -->
+            <div class="col-md-2"></div>
+  
+            <div class="col-md-7 text-start px-0"> <!-- 8/12 width for text -->
+                <h1 class="fw-bold">Projects</h1>
+                <p>
+                    <a href="https://github.com/DeepAI-Research/Distributask" target="_blank">Distributask</a>
+                    <br>
+                    Anthony Baez and Shaw Walters
+                    <br>
+                    <i>Work done during internship at DeepAI</i>
+                </p>
+                <p>
+                    <a href="optimization.pdf" target="_blank">Adaptive Optimization for Options Trading</a> 
+                    <br>
+                    Anthony Baez, Jose Ricardo Ramos, and Michael Wong
+                    <br>
+                    <i>15C.57: Optimization Methods</i>
+                </p>
+                <p>
+                    <a href="nlp.pdf" target="_blank">HalluciBERT: Efficiently Predicting Likelihood of Hallucation Pre-Inference</a> 
+                    <br>
+                    Anthony Baez, Audrey Douglas, Nathan Guntvedt, and Michael Wong
+                    <br>
+                    <i>6.8611: Quantative Methods for Natural Language Processing</i>
+                </p>
+                <p>
+                    <a href="compcogsci.pdf" target="_blank">Evaluating Probabilistic Language of Thought on Theory of Mind Tasks</a> 
+                    <br>
+                    Anthony Baez
+                    <br>
+                    <i>9.66: Computational Cognitive Science</i>
+                </p>
+            </div>
+        </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
