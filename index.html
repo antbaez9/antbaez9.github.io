@@ -11,31 +11,53 @@
 
     <style>
         body {
-            font-family: -apple-system, sans-serif;
+            font-family: Georgia, serif !important;
             text-align: center;
+            text-align: center;
+            background-color: #fff9f0;
+
         }
         .profile-img {
             width: 250px;
             height: 350px;
             object-fit: cover;
-            /* margin-top: -100px; Moves the image up */
-
+            border-radius: 8px;
+            border: 2px solid #000000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .navbar-nav .nav-item {
             margin-right: 15px;
+        }
+        /* Align nav with content */
+        .navbar .container {
+            padding-left: calc(15.5%); /* Matches col-md-2 offset */
+        }
+        .navbar-brand {
+            border-right: 2px solid #000000;
+            padding-right: 25px;
+            margin-right: 20px;
+        }
+        a {
+            color: #0052a3;  /* Darker professional blue */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #003d7a;  /* Even darker on hover */
         }
     </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="border-bottom: 2px solid #000000;">
         <div class="container">
             <a class="navbar-brand" href="#">Anthony Baez</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
@@ -52,21 +74,21 @@
           <div class="col-md-2"></div>
 
           <div class="col-md-6 text-start px-0"> <!-- 8/12 width for text -->
-              <h1 class="fw-bold">Anthony Baez</h1>
+              <!-- <h1 class="fw-bold">Anthony Baez</h1> -->
               <p>
                   Welcome to my website! I am currently an MEng student at MIT studying Artificial Intelligence and Decision Making (Course 6-4). 
-                  I currently work in the Media Lab in <a href="https://www.media.mit.edu/groups/cyborg-psychology/overview/" target="_blank">Pat Pataranutaporn's</a> group on mechanistic interpretability for human-computer interfaces.
+                  I currently work in the Media Lab in the <a href="https://www.media.mit.edu/groups/cyborg-psychology/overview/" target="_blank">Cyborg Pyschology</a> group with Prof. Pat Pataranutaporn on applying insights from mechanistic interpretability for human-computer interfaces.
               </p>
               <p>
                   I previously worked in <a href="https://www.mit.edu/~dluca/" target="_blank">Luca Daniel's</a> group on improving
                   Physics-Informed Neural Networks (PINNs) by guaranteeing conservation laws. Last summer, I worked at <a href="https://deepai.org/" target="_blank">DeepAI</a> 
-                  on improving text-to-video models. You can find out more about my past research and projects on the tabs above.
+                  on improving text-to-video models. You can find out more about my past and ongoing research and projects on the tabs above.
               </p>
 
 
               <p>
-                Outside of work, I am a member in <a href="https://phidelts.mit.edu/" target="_blank">Phi Delta Theta</a>. I also enjoy learning languages (I know Spanish and very basic Italian), 
-                hiking in various places, playing videogames, and reading cool sci-fi books.
+                Outside of work, I am a member of <a href="https://phidelts.mit.edu/" target="_blank">Phi Delta Theta</a>. I also enjoy traveling and learning other languages, 
+                hiking, playing videogames, and science fiction books and movies.
               </p>
               <p>
                 <a href="mailto:acbaez@mit.edu" target="_blank">acbaez [at] mit [dot] edu</a> / <a href="Baez_CV.pdf" target="_blank">CV</a> 
