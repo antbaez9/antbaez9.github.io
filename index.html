@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anthony Baez</title>
+    <link rel="icon" type="image/jpeg" href="nn.jpg">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,9 +14,8 @@
         body {
             font-family: Georgia, serif !important;
             text-align: center;
-            text-align: center;
             background-color: #fff9f0;
-
+            font-size: 17px;
         }
         .profile-img {
             width: 230px;
@@ -29,9 +29,12 @@
         .navbar-nav .nav-item {
             margin-right: 15px;
         }
+        .navbar-nav .nav-link {
+            font-size: 20px;
+        }
         /* Align nav with content */
         .navbar .container {
-            padding-left: calc(15.5%); /* Matches col-md-2 offset */
+            max-width: 750px;
         }
         .navbar-brand {
             border-right: 2px solid #000000;
@@ -68,37 +71,36 @@
     </nav>
 
     <!-- Profile Section -->
-    <div class="container mt-5">
-      <div class="row align-items-start"> <!-- Bootstrap row -->
-          <!-- Left Column: Text -->
-          <div class="col-md-2"></div>
+    <div class="container mt-5" style="max-width: 750px;">
+      <div class="row align-items-start g-4">
 
-          <div class="col-md-5 text-start px-0"> <!-- 8/12 width for text -->
-              <!-- <h1 class="fw-bold">Anthony Baez</h1> -->
-              <p>
-                Welcome to my website! I am an MEng student at MIT studying Artificial Intelligence and Decision Making (Course 6-4). 
-                I am in the <a href="https://www.media.mit.edu/groups/cyborg-psychology/overview/" target="_blank">Cyborg Pyschology</a> group under Prof. Pat Pataranutaporn in the <a href="https://www.media.mit.edu/" target="_blank">Media Lab</a>. 
-              </p>
-              <p>
-                My primary research interests lie in mechanistic interpretability for both scientific understanding of LLMs and improving their safety. 
-                I also am interested in how we can apply mechanistic interpretability to create interfaces that allow us to better monitor and control AI, for both technical and non-technical users.
-              </p>
-              <p>
-                Outside of work, I enjoy traveling, and learning other languages, hiking, videogames, and everything science fiction.
-              </p>
-              <p>
-                <a href="mailto:acbaez@mit.edu" target="_blank">Email</a> / <a href="Baez_CV.pdf" target="_blank">CV</a> 
-                 / <a href="https://www.linkedin.com/in/anthony-c-baez" target="_blank">LinkedIn</a> 
-                 / <a href="https://scholar.google.com/citations?user=yUlCF9oAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                 / <a href="https://github.com/antbaez9" target="_blank">Github</a>
-                 <!-- <br> -->
-              </p>
+          <div class="col text-start">
+                  <!-- <h1 class="fw-bold">Anthony Baez</h1> -->
+                  <p>
+                    Welcome to my website! I am an MEng student at MIT studying Artificial Intelligence and Decision Making (Course 6-4).
+                    I am in the <a href="https://www.media.mit.edu/groups/cyborg-psychology/overview/" target="_blank">Cyborg Pyschology</a> group under Prof. Pat Pataranutaporn in the <a href="https://www.media.mit.edu/" target="_blank">Media Lab</a>.
+                  </p>
+                  <p>
+                    My primary research interests lie in mechanistic interpretability for both scientific understanding of LLMs and improving their safety.
+                    I also am interested in how we can apply mechanistic interpretability to create interfaces that allow us to better monitor and control AI, for both technical and non-technical users.
+                  </p>
+                  <p>
+                    Outside of work, I enjoy traveling, and learning other languages, hiking, videogames, and everything science fiction.
+                  </p>
+                  <p>
+                    <a href="mailto:acbaez@mit.edu" target="_blank">Email</a> / <a href="Baez_CV.pdf" target="_blank">CV</a>
+                     / <a href="https://www.linkedin.com/in/anthony-c-baez" target="_blank">LinkedIn</a>
+                     / <a href="https://scholar.google.com/citations?user=yUlCF9oAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                     / <a href="https://github.com/antbaez" target="_blank">Github</a>
+                     <!-- <br> -->
+                  </p>
+              </div>
+
+          <!-- Image -->
+          <div class="col-auto">
+              <img src="headshot_cropped.jpeg" class="profile-img" alt="Profile Image">
           </div>
 
-          <!-- Right Column: Image -->
-          <div class="col-md-4 text-center"> <!-- 4/12 width for image -->
-              <img src="headshot_cropped.jpeg" class="profile-img img-fluid" alt="Profile Image" style="margin-left: -100px;">
-          </div>
       </div>
 
     <!-- Bootstrap JS -->
