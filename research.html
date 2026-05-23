@@ -18,18 +18,35 @@
             font-size: 17px;
         }
         .navbar-nav .nav-item {
-            margin-right: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: relative;
+        }
+        .navbar-nav .nav-item::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 28px;
+            background-color: #000000;
+        }
+        .navbar-nav .nav-item:first-child::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 28px;
+            background-color: #000000;
         }
         .navbar-nav .nav-link {
             font-size: 20px;
         }
         .navbar .container {
             max-width: 750px;
-        }
-        .navbar-brand {
-            border-right: 2px solid #000000;
-            padding-right: 25px;
-            margin-right: 20px;
         }
         a {
             color: #0052a3;
@@ -45,7 +62,6 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="border-bottom: 2px solid #000000;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Anthony Baez</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,8 +69,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                 </ul>
+                <img src="media_lab_logo.png" alt="MIT Media Lab" style="height: 44px; margin-left: auto;">
             </div>
         </div>
     </nav>
@@ -65,9 +81,18 @@
           <div class="col text-start">
 
               <p>
+                <a href="https://arxiv.org/abs/2605.15455" target="_blank"><b>Multi-Turn Neural Transparency: Surfacing Neural Activations Improves User Calibration to LLM Behavioral Drift</b></a>
+                <br>
+                Sheer Karny*, <b>Anthony Baez</b>*, and Pat Pataranutaporn
+                <br>
+                <i>*Equal Contribution</i>
+                <br>
+                <i>Under Review</i>
+              </p>
+              <p>
                 <a href="https://arxiv.org/pdf/2511.00230" target="_blank"><b>Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI</b></a>
                 <br>
-                Sheer Karny*, Anthony Baez*, and Pat Pataranutaporn
+                Sheer Karny*, <b>Anthony Baez</b>*, and Pat Pataranutaporn
                 <br>
                 <i>*Equal Contribution</i>
                 <br>
@@ -78,7 +103,7 @@
               <p>
                 <a href="https://arxiv.org/pdf/2511.09048" target="_blank"><b>Guaranteeing Conservation of Integrals in Physics-Informed Neural Networks</b></a>
                 <br>
-                Anthony Baez, Wang Zhang, Ziwen Ma, Subhro Das, Lam M Nguyen, and Luca Daniel
+                <b>Anthony Baez</b>, Wang Zhang, Ziwen Ma, Subhro Das, Lam M Nguyen, and Luca Daniel
                 <br>
                 <i>Arxiv Preprint</i>
                 <br>
@@ -87,7 +112,7 @@
               <p>
                 <a href="https://arxiv.org/abs/2410.17445" target="_blank"><b>Guaranteeing Conservation Laws in Physics-Informed Neural Networks</b></a>
                 <br>
-                Anthony Baez, Wang Zhang, Ziwen Ma, Subhro Das, Lam M Nguyen, and Luca Daniel
+                <b>Anthony Baez</b>, Wang Zhang, Ziwen Ma, Subhro Das, Lam M Nguyen, and Luca Daniel
                 <br>
                 <i>Data-driven and Differentiable Simulations, Surrogates, and Solvers Workshop @ NeurIPS 2024</i>
                 <br>
@@ -96,7 +121,7 @@
               <p>
                 <a href="https://aclanthology.org/2023.tsar-1.10.pdf" target="_blank"><b>LSLlama: Fine-tuned LLaMA for Lexical Simplification</b></a>
                 <br>
-                Anthony Baez, and Horacio Saggion
+                <b>Anthony Baez</b>, and Horacio Saggion
                 <br>
                 <i>Second Workshop on Text Simplification, Accessibility and Readability @ EMNLP 2023</i>
                 <br>
